@@ -1,0 +1,751 @@
+*,
+body {
+    color: #444;
+    font-family: "PingFang TC", "Heiti TC", "Noto Sans TC", "Noto Sans CJK TC",
+        "Source Han Sans TC", Verdana, Helvetica, "Microsoft JhengHei",
+        sans-serif;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+.main-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    margin-left: 0;
+}
+
+h3 {
+    font-size: 20px;
+    color: #222;
+    line-height: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+a {
+    color: #888;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+a:hover {
+    color: #ff6136;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+/* header */
+.nav-wrap {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+}
+
+.header::after {
+    content: "";
+    display: block;
+    margin-bottom: 200px;
+}
+
+.top-nav {
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 5px;
+}
+
+#logo {
+    width: 165px;
+    height: 50px;
+    overflow: hidden;
+}
+
+#logo img {
+    height: 60px;
+}
+
+.top-nav-right li {
+    margin: 0 5px;
+}
+
+.top-nav-right i {
+    color: #9b9b9b;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.top-nav-right .nav-i:hover {
+    background-color: #f45e35;
+    color: #fff;
+}
+
+.loginBtn {
+    width: 60px;
+    height: 30px;
+    color: #fff;
+    background-color: #f45e35;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 16px;
+}
+
+.loginBtn:hover {
+    color: #fff;
+    background-color: #d04822;
+}
+
+.search-input {
+    display: none;
+}
+
+/* header side-nav */
+.side-nav ul {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+.side-nav li {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin: 10px 15px;
+}
+
+.side-nav a {
+    color: #ccc;
+}
+
+.side-nav i {
+    color: #ccc;
+    font-size: 15px;
+    padding: 5px;
+    width: 100%;
+}
+
+.side-nav li:hover i,
+.side-nav li:hover a {
+    color: #f45e35;
+}
+
+/* hashtag */
+.hashtag-row {
+    padding: 10px 15px;
+    align-items: center;
+    order: 2;
+}
+
+.hashtag {
+    color: #222;
+    font-size: 16px;
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+
+.hashtag::before {
+    content: "#";
+    display: inline;
+}
+
+/* 每日 */
+.calendar {
+    padding: 10px;
+}
+
+.date-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 4px solid #f3f3f3;
+}
+
+.date-slogan {
+    padding: 10px 20px;
+    width: fit-content;
+}
+
+.date-wrap {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.month-week {
+    line-height: 1.4rem;
+    margin-left: 10px;
+}
+
+.month {
+    font-size: 12px;
+}
+
+.date {
+    font-weight: bold;
+    font-size: 30px;
+    color: #222;
+}
+
+.slogan {
+    color: #0a5ba8;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.date-card-bottom {
+    background-color: #f3f3f3;
+    padding: 10px 20px;
+}
+
+.para-title {
+    font-size: 16px;
+}
+
+.seperate {
+    width: 100%;
+    height: 10px;
+    background-image: url("./womany.net/71b868a0e7fa3e27f8b395574314afa7.png");
+    background-size: contain;
+    margin: 15px 0;
+}
+
+.article {
+    margin-bottom: 30px;
+}
+
+/* banner */
+
+/* .banner-wrap {
+  width: 100%;
+  height: 800px;
+  background-image: url("./womany.net/91377efe4f6b19f924f8bfcbc8051447.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 20px 0;
+} */
+
+.banner-wrap {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.banner-pic {
+    width: 100%;
+}
+
+.banner-pic > img {
+    width: 100%;
+}
+
+.circle-indicator li {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+/* section css */
+.section {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 10px 0;
+}
+
+.title a {
+    font-size: 14px;
+}
+
+.justify-content-between {
+    width: 100%;
+    /*  */
+    justify-content: space-between;
+}
+
+.btn {
+    border: 1px solid #0a5291;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+.btn a {
+    color: #0a5291;
+    font-size: 18px;
+}
+
+/* new-artcle */
+.new-article-wrap {
+    width: 100%;
+}
+
+.new-article-card {
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 2px solid #f3f3f3;
+}
+
+.new-article-card:hover h3 {
+    color: #f45e35;
+}
+
+.new-article-card:hover .article-title::before {
+    background: url("./womany.net/4910c6d5537762a3bdacb1a310305f8a.png")
+        no-repeat center center/contain;
+}
+
+.article-title {
+    font-size: 14px;
+    line-height: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.article-title::before {
+    content: "";
+    display: block;
+    background: url("./womany.net/72ff082befd65d8d641495358f330664.png")
+        no-repeat center center/contain;
+    width: 25px;
+    height: 25px;
+    margin: 0 15px;
+}
+
+/* 商品 */
+.product-card {
+    width: 220px;
+    margin-right: 20px;
+}
+
+#product img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#product h4 {
+    margin-top: 8px;
+    height: 50px;
+}
+
+#product p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin: 20px 0;
+}
+
+.moreBtn {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.product-card:hover .moreBtn {
+    background-color: #eee;
+}
+
+/* video */
+.video-card {
+    width: 280px;
+    background-color: #f3f3f3;
+    margin-right: 10px;
+}
+
+.video-card h4 {
+    padding: 15px;
+}
+
+/* podcast */
+.podcast-card {
+    width: 220px;
+    margin: 0 10px 10px 10px;
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.podcast-card > h4 {
+    margin: 10px 0 20px 0;
+}
+
+.podcast-img-wrap img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.podcast-link-title {
+    color: #888;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.linkBtn-wrap {
+    width: 100%;
+    display: grid;
+    grid-template: auto auto / auto auto;
+    column-gap: 8px;
+    row-gap: 8px;
+    margin: 8px 0;
+}
+
+.linkBtn a {
+    font-size: 12px;
+}
+
+.linkBtn:hover {
+    background-color: #eee;
+}
+
+/* 熱門課程 course */
+#course {
+    background-color: #f3f3f3;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+#course .img-wrap {
+    width: 250px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#course .img-wrap img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* 試用分享 */
+.test-card {
+    display: flex;
+    padding: 20px 10px;
+    border-bottom: 2px solid #f3f3f3;
+}
+
+.test-card img {
+    width: 120px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.test-feeds-wrap {
+    width: 100%;
+}
+
+.test-feed {
+    font-size: 14px;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.label {
+    background-color: #e6edf5;
+    font-size: 12px;
+    padding: 5px;
+    width: 35px;
+    text-align: center;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom div {
+    font-size: 12px;
+}
+
+.test-bottom i {
+    color: #f45e35;
+    font-size: 12px;
+}
+
+.test-bottom span {
+    color: #f45e35;
+    font-size: 12px;
+}
+
+.test-card:hover a {
+    color: #ff6136;
+}
+
+/* more topics */
+.topics-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topic-card {
+    width: 140px;
+    margin: 10px;
+}
+
+.topic-name {
+    width: 80px;
+    height: 80px;
+    background: url("./womany.net/1b929742fbf59e8e6fe1e998d8fabc30.png");
+    background-size: cover;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.topic-info {
+    font-size: 12px;
+    margin: 15px 0;
+}
+
+.followBtn {
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #f45e35;
+    background-color: #fff;
+    text-align: center;
+}
+
+.followBtn a {
+    color: #f45e35;
+}
+
+.followBtn:hover {
+    background-color: #ffbdab;
+}
+
+#topics {
+    border-bottom: 2px solid #f3f3f3;
+}
+
+/* creator */
+.creator-row {
+    display: flex;
+}
+
+.creator-card {
+    width: 95px;
+    margin: 8px;
+    text-align: center;
+}
+
+.creator-card img {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+}
+
+.creator-card p {
+    font-size: 12px;
+    margin: 5px;
+}
+
+/* topics new post */
+.new-topic-card {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.new-topic-card > .card-img {
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-left: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.new-topic-card:first-child {
+    width: 100%;
+    max-width: 500px;
+    border-bottom: 2px solid #f3f3f3;
+    flex-direction: column;
+}
+
+.new-topic-card:first-child > .card-img {
+    width: 100%;
+    height: 220px;
+    background-image: url("https://womany.net/cdn-cgi/image/w=700,fit=scale-down,f=auto/https://castle.womany.net/images/articles/28605/5e280f1645533a4a53e49fdf4100a8e5.png");
+    background-size: contain;
+}
+
+.new-topic-info {
+    width: 100%;
+    padding-right: 10px;
+}
+
+.new-topic-card:hover .topics-new-title {
+    color: #f45e35;
+}
+
+.new-topic-card:hover .card-img .fa-regular {
+    display: none;
+}
+.new-topic-card:hover .card-img .fa-solid {
+    display: inline;
+}
+
+.topics-new-title {
+    margin: 10px 0;
+}
+
+.topics-new-bottom {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.card-img > i {
+    color: #fff;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.card-img > .fa-solid {
+    display: none;
+}
+
+.new-topic-card:nth-child(2) .card-img {
+    background-image: url("./womany.net/f1e84532ca5840cb0ea21c78ae0ead25.webp");
+}
+
+.new-topic-card:nth-child(3) .card-img {
+    background-image: url("./womany.net/fa32d4b2b6b99780f02886b8ab6be202.webp");
+}
+
+.new-topic-card:nth-child(4) .card-img {
+    background-image: url("./womany.net/4cc1ea257c4fc9951d97b62d536d02e8.webp");
+}
+
+.new-topic-card:nth-child(5) .card-img {
+    background-image: url("./womany.net/5162e730e40aa1ca872dbf28393c154b.webp");
+}
+
+.new-topic-card:nth-child(6) .card-img {
+    background-image: url("./womany.net/685328e2772d0e5f14d33f624e9000c8.png");
+}
+
+.new-topic-card:nth-child(7) .card-img {
+    background-image: url("./womany.net/a40e5253f9c4d381bcf3e2fde376822b.png");
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    height: 400px;
+    background: url("./womany.net/fingerw_q30-6c528cc2b1dd7a19548eb3a733ee6b12.jpg")
+        center center/cover no-repeat;
+    text-align: center;
+    padding: 20px 5px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.footer p,
+.footer li {
+    color: #fff;
+    font-size: 12px;
+}
+
+.footer > h5 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.footer > h5 > i {
+    color: #f45e35;
+    font-size: 16px;
+}
+
+.footer-menu,
+.footer-social-menu {
+    margin: 20px 0;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu > li > a {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 8px;
+}
+
+.footer-menu > li > a:hover {
+    text-decoration: underline;
+}
+
+.footer .footer-social-menu i {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.footer-social-menu {
+    margin: 60px 5px 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.footer-bottom p,
+.footer-bottom a {
+    color: #fff;
+    margin: 5px 0;
+    padding: 0 10px;
+}
